@@ -1,73 +1,119 @@
-# Welcome to your Lovable project
+# Shreyas Katagi - Portfolio Website
 
-## Project info
+Personal portfolio website showcasing AI/ML engineering work, projects, and skills.
 
-**URL**: https://lovable.dev/projects/c7c44367-1f90-4b76-98c1-1a84ab82a3ac
+## 🚀 Live Demo
 
-## How can I edit this code?
+Visit: [https://svkatagi.github.io](https://svkatagi.github.io)
 
-There are several ways of editing your application.
+## 🛠️ Technologies Used
 
-**Use Lovable**
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Beautiful component library
+- **React Router** - Client-side routing
+- **Lucide React** - Icon library
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c7c44367-1f90-4b76-98c1-1a84ab82a3ac) and start prompting.
+## 📦 Installation & Setup
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v16 or higher)
+- npm or yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Svkatagi/svkatagi.github.io.git
+   cd svkatagi.github.io
+   ```
 
-Follow these steps:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. **Open your browser**
+   Navigate to `http://localhost:8080`
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🏗️ Build & Deploy
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Development Build
+```bash
+npm run build:dev
 ```
 
-**Edit a file directly in GitHub**
+### Production Build
+```bash
+npm run build
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Preview Build
+```bash
+npm run preview
+```
 
-**Use GitHub Codespaces**
+## 📁 Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+src/
+├── components/          # React components
+│   ├── ui/            # shadcn/ui components
+│   ├── Header.tsx     # Navigation header
+│   ├── Hero.tsx       # Hero section
+│   ├── Skills.tsx     # Skills showcase
+│   ├── Projects.tsx   # Projects section
+│   ├── Experience.tsx # Work experience
+│   ├── Contact.tsx    # Contact form
+│   └── Footer.tsx     # Footer component
+├── pages/             # Page components
+├── hooks/             # Custom React hooks
+├── lib/               # Utility functions
+└── assets/            # Images and static files
+```
 
-## What technologies are used for this project?
+## 🎨 Customization
 
-This project is built with:
+### Styling
+- Uses Tailwind CSS for styling
+- Custom theme configuration in `tailwind.config.ts`
+- Component variants using `class-variance-authority`
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Content
+- Update personal information in component files
+- Replace images in `src/assets/`
+- Modify content in respective component files
 
-## How can I deploy this project?
+## 🚀 Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/c7c44367-1f90-4b76-98c1-1a84ab82a3ac) and click on Share -> Publish.
+This project is configured for GitHub Pages deployment:
 
-## Can I connect a custom domain to my Lovable project?
+1. **Build the project**
+   ```bash
+   npm run build
+   ```
 
-Yes, you can!
+2. **Deploy to GitHub Pages**
+   - Push changes to the `main` branch
+   - GitHub Actions will automatically build and deploy
+   - Site will be available at `https://svkatagi.github.io`
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📝 License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Feel free to submit issues and enhancement requests!
+
+---
+
+Built with ❤️ by Shreyas Katagi
