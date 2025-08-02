@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shreyas Katagi Portfolio Design System
+Modern, minimalistic design with sophisticated color palette and smooth animations.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors - Professional dark theme with subtle warmth */
+    --background: 240 6% 8%;
+    --foreground: 0 0% 95%;
+
+    /* Card system - Elevated dark surfaces */
+    --card: 240 5% 12%;
+    --card-foreground: 0 0% 95%;
+    --card-hover: 240 5% 15%;
+
+    /* Popover system */
+    --popover: 240 5% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Primary - Sophisticated cyan-teal */
+    --primary: 180 58% 47%;
+    --primary-foreground: 240 6% 8%;
+    --primary-glow: 180 65% 55%;
+    --primary-subtle: 180 30% 25%;
+
+    /* Secondary - Warm gray */
+    --secondary: 240 4% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    /* Muted - Professional grays */
+    --muted: 240 4% 18%;
+    --muted-foreground: 240 3% 65%;
+
+    /* Accent - Electric blue highlight */
+    --accent: 200 85% 60%;
+    --accent-foreground: 240 6% 8%;
+
+    /* Destructive - Clean red */
+    --destructive: 0 72% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 240 4% 22%;
+    --input: 240 4% 18%;
+    --ring: 180 58% 47%;
+
+    /* Design system tokens */
+    --radius: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-sm: 0.5rem;
+
+    /* Advanced gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(180 58% 47%), hsl(180 65% 55%));
+    --gradient-secondary: linear-gradient(135deg, hsl(200 85% 60%), hsl(180 58% 47%));
+    --gradient-subtle: linear-gradient(180deg, hsl(240 6% 8%), hsl(240 5% 12%));
+    --gradient-card: linear-gradient(135deg, hsl(240 5% 12%), hsl(240 4% 16%));
+    --gradient-mesh: radial-gradient(ellipse 80% 80% at 50% -20%, hsl(180 58% 47% / 0.1), transparent);
+
+    /* Professional shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.2);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.3), 0 2px 4px -2px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.4), 0 4px 6px -4px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 30px hsl(180 58% 47% / 0.3);
+    --shadow-glow-strong: 0 0 40px hsl(180 58% 47% / 0.4);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .light {
+    /* Light mode - Clean professional palette */
+    --background: 0 0% 98%;
+    --foreground: 240 8% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 8% 12%;
+    --card-hover: 240 4% 96%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 8% 12%;
+
+    --primary: 180 58% 47%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 180 65% 55%;
+    --primary-subtle: 180 30% 85%;
+
+    --secondary: 240 4% 93%;
+    --secondary-foreground: 240 8% 12%;
+
+    --muted: 240 4% 93%;
+    --muted-foreground: 240 3% 40%;
+
+    --accent: 200 85% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 4% 88%;
+    --input: 240 4% 93%;
+    --ring: 180 58% 47%;
+
+    /* Light mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(180 58% 47%), hsl(180 65% 55%));
+    --gradient-secondary: linear-gradient(135deg, hsl(200 85% 60%), hsl(180 58% 47%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 98%), hsl(240 4% 95%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(240 4% 96%));
+    --gradient-mesh: radial-gradient(ellipse 80% 80% at 50% -20%, hsl(180 58% 47% / 0.08), transparent);
+
+    /* Light mode shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(240 8% 12% / 0.08);
+    --shadow-md: 0 4px 6px -1px hsl(240 8% 12% / 0.12), 0 2px 4px -2px hsl(240 8% 12% / 0.12);
+    --shadow-lg: 0 10px 15px -3px hsl(240 8% 12% / 0.15), 0 4px 6px -4px hsl(240 8% 12% / 0.15);
+    --shadow-glow: 0 0 30px hsl(180 58% 47% / 0.25);
+    --shadow-glow-strong: 0 0 40px hsl(180 58% 47% / 0.35);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-secondary {
+    background: var(--gradient-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .bg-gradient-mesh {
+    background: var(--gradient-mesh);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-glow-strong {
+    box-shadow: var(--shadow-glow-strong);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-fast {
+    transition: var(--transition-fast);
+  }
+
+  .prose-portfolio {
+    @apply text-foreground/80 leading-relaxed;
+  }
+
+  .section-padding {
+    @apply px-6 lg:px-12 xl:px-16;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto section-padding;
+  }
+}
